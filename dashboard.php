@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
 <?php
 session_start();
 ob_start();
-include 'db_connect.php';
+include './db_php/db_connect.php';
 if ($_SESSION['email'] == '') {
   header("location: login.php");
 }
@@ -33,15 +32,7 @@ define("DATA","data/");
 <body>
   <?php include_once(DATA ."/sidebar.php") ?>
   <section class="home-section">
-    <div class="home-content">
-      <i class='bx bx-menu'></i>
-      <button class="show-site">
-        <span class="text">
-          <i class="fa fa-eye" aria-hidden="true"></i>
-          Siteyi
-          Görüntüle</span>
-      </button>
-    </div>
+  <?php include_once(DATA ."/navbar.php") ?>
   </section>
   <script>
     let arrow = document.querySelectorAll(".arrow");
