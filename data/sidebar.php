@@ -24,9 +24,16 @@
       <ul class="sub-menu">
         <li><a class="link_name" href="#">Site Yönetimi</a></li>
         <li><a href="/yonetim-paneli/genel-ayarlar.php">Genel Ayarlar</a></li>
-        <li><a href="#">İletşişim Ayarları</a></li>
+        <li><a href="#">Açılır Mesaj</a></li>
+        <li><a href="#">Api Ayarları</a></li>
         <li><a href="#">Sosyal Medya Ayarları</a></li>
-        <li><a href="#">Renk Ayarları</a></li>
+        <li><a href="#">Modül Ayarları</a></li>
+        <li><a href="#">Anasayfa Modül Ayarları</a></li>
+        <li><a href="#">Limit Ayarları</a></li>
+        <li><a href="#">Sİte Bakım Modu</a></li>
+        <li><a href="#">Mail Ayarları</a></li>
+        <li><a href="#">Sms Ayarları</a></li>
+        <li><a href="#">Arka Plan Ayarları</a></li>
       </ul>
     </li>
     <li>
