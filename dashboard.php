@@ -55,10 +55,18 @@ if ($_SESSION['email'] == '') {
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Site Yönetimi</a></li>
           <li><a href="#">Genel Ayarlar</a></li>
-          <li><a href="#">İletşişim Ayarları</a></li>
+          <li><a href="#">Açılır Mesaj</a></li>
+          <li><a href="#">Api Ayarları</a></li>
+          <li><a href="#">İletişim Ayarları</a></li>
           <li><a href="#">Sosyal Medya Ayarları</a></li>
-          <li><a href="#">Renk Ayarları</a></li>
-        </ul>
+          <li><a href="#">Modül Ayarları</a></li>
+          <li><a href="#">AnaSayfa Modül Ayarları</a></li>
+          <li><a href="#">Limit Ayarları</a></li>
+          <li><a href="#">Site Bakım Modu</a></li>
+          <li><a href="#">Mail Ayarları</a></li>
+          <li><a href="#">Sms Ayarları</a></li>
+          <li><a href="#">Arka Plan Ayarları</a></li>
+          </ul>
       </li>
       <li>
         <a href="#">
