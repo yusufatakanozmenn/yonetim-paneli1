@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$database = "3d_menu_yonetim_panel";
+$database = "yonetim_paneli";
 $username = "root";
 $password = "";
 
