@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <title>Yemek Listesi</title>
     <meta charset="UTF-8">
@@ -21,61 +22,64 @@
     <div class="limiter">
 
         <div class="container-login100">
+            <?php
+            include 'insert.php';
+
+            ?>
             <div class="wrap-login100">
-                <section class="home-section">
-                    <div class="home-content">
-                        <span class="text">Drop Down Sidebar</span>
-                    </div>
-                </section>
                 <form class="login100-form validate-form" action="" method="post">
-
-                    <div class="wrap-input100 form">
-                        <a href="#" class="mx-auto">
-                            <div class="login100-pic js-tilt" data-tilt>
-                                <img src="images/img.jpg" style="max-height: 100px; height: 100px;">
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <span class="input100-text">LOGO</span>
+                    <span class="input100-text">Yemek Adı</span>
                     <div class="wrap-input100 validate-input">
-                        <input class="input100" type="file" accept="image/*">
+                        <input class="input100" type="text" name="yemek-adi" placeholder="Yemek Adı" required>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
-                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                            <i class="fa fa-cutlery" aria-hidden="true"></i>
                         </span>
                     </div>
-
-                    <span class="input100-text">Site URL</span>
+                    <span class="input100-text">Fiyatı</span>
                     <div class="wrap-input100 validate-input">
-                        <input class="input100" type="text" name="url" placeholder="URL">
+                        <input class="input100" type="text" name="yemek-fiyati" placeholder="Fiyatı" required>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
-                            <i class='bx bx-link-alt'></i>
+                            <i class="fa fa-try" aria-hidden="true"></i>
                         </span>
                     </div>
-
-                    <span class="input100-text">Site Başlığı</span>
+                    <span class="input100-text">Kategori Adı</span>
                     <div class="wrap-input100 validate-input">
-                        <input class="input100" type="text" name="url" placeholder="URL">
+                        <input class="input100" type="text" name="kategori-adi" placeholder="Kategori Adı" required>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
-                            <i class='bx bx-link-alt'></i>
+                            <i class='bx bxs-category'></i>
                         </span>
                     </div>
-
-                    <span class="input100-text">SEO Açıklama</span>
-                    <div class="wrap-input100 validate-input">
-                        <input class="input100" type="text" name="url" placeholder="SEO Açıklama">
+                    <span class="input100-text">Yemek Görseli</span>
+                    <div class="wrap-input100">
+                        <input class="input100" type="file" name="yemek-gorseli" accept="image/*">
                         <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class='bx bxs-cloud-upload'></i>
+                        </span>
+                    </div>
+                    <!--<span class="input100-text">Yemek Modeli (3D)</span>
+                    <div class="wrap-input100 ">
+                        <input class="input100" type="file" name="yemek-modeli" accept="video/*">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class='bx bxs-cloud-upload'></i>
+                        </span>
+                    </div>-->
+                    <span class="input100-text">Yemek İçeriği</span>
+                    <div class="wrap-input100 validate-input">
+                        <textarea class="input100-textarea" id="acikalama" name="acikalama" rows="10"
+                            cols="10"></textarea>
+                        <span class=" focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-sort-desc" aria-hidden="true"></i>
                         </span>
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn" type="submit" name="update">Güncelle</button>
+                        <button class="login100-form-btn" type="submit" name="add">Ekle</button>
                     </div>
                 </form>
             </div>

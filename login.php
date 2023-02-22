@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-include './db_connect.php';
+include 'db_connect.php';
 
 if (isset($_POST['login'])) {
-    $user_email = $_POST["user_email"];
-    $user_pass = $_POST["user_pass"];
+    $user_email = $_POST["email"];
+    $user_pass = $_POST["password"];
 
     $get_user_pass_hash = "SELECT sifre FROM kullanici WHERE kadi='$user_email'";
     $get_user_pass = $conn->prepare($get_user_pass_hash);
