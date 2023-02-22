@@ -23,7 +23,7 @@
       </div>
       <ul class="sub-menu">
         <li><a class="link_name" href="#">Site Yönetimi</a></li>
-        <li><a href="/yonetim-paneli/genel-ayarlar.php">Genel Ayarlar</a></li>
+        <li><a href="./general_settings.php">Genel Ayarlar</a></li>
         <li><a href="#">Açılır Mesaj</a></li>
         <li><a href="#">Api Ayarları</a></li>
         <li><a href="#">Sosyal Medya Ayarları</a></li>

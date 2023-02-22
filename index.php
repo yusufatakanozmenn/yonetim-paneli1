@@ -25,7 +25,7 @@
 
 <body>
 	<div class="limiter">
-		<?php include "login.php"; ?>
+		<?php include "./db_php/login.php"; ?>
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
@@ -61,24 +61,11 @@
 					</div>
 
 					<div class="text-center p-t-12">
-						<!-- <span class="txt1">
-							Şifremi Unuttum.
-						</span> -->
 						<a class="txt2" href="#">
 							Şifremi Unuttum.
 						</a>
 					</div>
-
-					<!-- <div class="text-center p-t-136">
-						<span class="txt1">
-
-						</span>
-						<a class="txt2" href="#">
-							Create your Account
-							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-						</a>
-					</div> -->
-
+					
 					<?php
 					if (isset($_REQUEST["err"]))
 						$msg = "Geçersiz email ya da şifre";
